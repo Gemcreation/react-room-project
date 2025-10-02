@@ -11,7 +11,7 @@ const FirstSection = () => {
         <section>
             <article>
                 <div>
-                    <img src={slideImg} alt="Hero image" />
+                    <img src={slideImg} alt="Hero" />
                 </div>
                 <div>
                     <button>
