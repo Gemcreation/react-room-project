@@ -1,10 +1,15 @@
-import FirstSection from "./FirstSection"
+
+import FirstSection from "./FirstSection";
+import SecondSection from "./SecondSection";
 
 const Main = () => {
 
     return(
+        <>
+            <FirstSection/>
 
-        <FirstSection/>
+            <SecondSection/>
+        </>
 
     )
 }
