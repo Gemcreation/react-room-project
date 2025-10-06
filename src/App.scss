@@ -4,3 +4,15 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 28px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 60;
+}
