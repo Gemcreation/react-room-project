@@ -8,35 +8,52 @@ const FirstSection = () => {
 
     return(
 
-        <section>
-            <article>
-                <div>
+        <section className="hero">
+            <article className="hero-left">
+                <div className="slider-wrap">
                     <img src={slideImg} alt="Hero" />
                 </div>
-                <div>
-                    <button>
+
+                {/* <div className="slider-controls">
+                    <button className="slider-btn">
                     <img src={slideIconLeft} alt="slideIconLeft" />
                     </button>
-                    <button>
+
+                    <button className="slider-btn">
                     <img src={slideIconRight} alt="slideIconRight" />
                     </button>
-                </div>
+                </div> */}
             </article>
 
-            <article>
-                <h1>Discover innovative ways to decorate</h1>
+            <article className="hero-right">
+                <div className="hero-right-text">
+                        <h1 className="hero-title">Discover innovative ways to decorate</h1>
 
-                <p>
-                We provide unmatched quality, comfort, and style for property owners across the country.
-                Our experts combine form and function in bringing your vision to life. Create a room in your
-                own style with our collection and make your property a reflection of you and what you love.
-                </p>
+                        <p class="hero-copy">
+                        We provide unmatched quality, comfort, and style for property owners across the country.
+                        Our experts combine form and function in bringing your vision to life. Create a room in your
+                        own style with our collection and make your property a reflection of you and what you love.
+                        </p>
 
-                <a href="#shop">
-                    SHOP NOW 
-                <img src={arrow} alt="Room logo" />
-                    {/* <span class="arrow"></span> */}
-                </a>
+                        <a href="#shop" className="cta-shop">
+                            <span>SHOP NOW</span> 
+                        <img src={arrow} alt="Room logo" className="arrow-icon" />
+                            {/* <span class="arrow"></span> */}
+                        </a>
+                </div>
+                
+                <div className="hero-right-handling-btn">
+                    <div className="slider-controls">
+                        <button className="slider-btn">
+                            <img src={slideIconLeft} alt="slideIconLeft" />
+                        </button>
+
+                        <button className="slider-btn">
+                            <img src={slideIconRight} alt="slideIconRight" />
+                        </button>
+                    </div>
+                </div>
+                
             </article>
         </section>
 
