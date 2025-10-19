@@ -6,11 +6,12 @@ const SecondSection = () => {
 
     return(
 
-        <section id="about" class="about">
+        <section id="about" className="about">
             <div>
                 <img src={SecondSectionImg1} alt="About furniture light" />
             </div>
-            <div>
+
+            <div className="text-content">
                 <h2>ABOUT OUR FURNITURE</h2>
                 <p>
                     Our multifunctional collection blends design and function to suit your individual taste.
@@ -19,6 +20,7 @@ const SecondSection = () => {
                     or anything in between. Product specialists are available to help you create your dream space.
                 </p>
             </div>
+
             <div>
                 <img src={SecondSectionImg2} alt="About furniture light" />
             </div>
