@@ -8,7 +8,7 @@ const FirstSection = () => {
 
     return(
 
-        <section className="hero">
+        <section className="hero main">
             <article className="hero-left">
                 <div className="slider-wrap">
                     <img src={slideImg} alt="Hero" />

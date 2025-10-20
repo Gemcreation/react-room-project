@@ -6,7 +6,7 @@ const SecondSection = () => {
 
     return(
 
-        <section id="about" className="about">
+        <section id="about" className="about main">
             <div>
                 <img src={SecondSectionImg1} alt="About furniture light" />
             </div>
