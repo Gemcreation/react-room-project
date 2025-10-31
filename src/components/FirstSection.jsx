@@ -13,6 +13,7 @@ const FirstSection = () => {
         {url: 'desktop-image-hero-3.jpg', title: 'black'},
     ];
 
+
     return(
 
         <section className="hero main">
@@ -57,7 +58,7 @@ const FirstSection = () => {
                         </button>
 
                         <button className="slider-btn">
-                            <img src={slideIconRight} alt="slideIconRight" onClick={goToPrevious} />
+                            <img src={slideIconRight} alt="slideIconRight" onClick={goToNext} />
                         </button>
                     </div>
                 </div>
