@@ -1,17 +1,25 @@
 
-import slideImg from "../assets/images/desktop-image-hero-1.jpg";
+// import slideImg from "../assets/images/desktop-image-hero-1.jpg";
 import slideIconLeft from "../assets/images/icon-angle-left.svg";
 import slideIconRight from "../assets/images/icon-angle-right.svg";
 import arrow from "../assets/images/icon-arrow.svg";
+import ImageSlider from "./ImageSlider";
 
 const FirstSection = () => {
+
+    const slides = [
+        {url: 'desktop-image-hero-1.jpg', title: 'white'},
+        {url: 'desktop-image-hero-2.jpg', title: 'yello'},
+        {url: 'desktop-image-hero-3.jpg', title: 'black'},
+    ];
 
     return(
 
         <section className="hero main">
             <article className="hero-left">
                 <div className="slider-wrap">
-                    <img src={slideImg} alt="Hero" />
+                    <ImageSlider slides={slides} />
+                    {/* <img src={slideImg} alt="Hero" /> */}
                 </div>
 
                 {/* <div className="slider-controls">
@@ -45,11 +53,11 @@ const FirstSection = () => {
                 <div className="hero-right-handling-btn">
                     <div className="slider-controls">
                         <button className="slider-btn">
-                            <img src={slideIconLeft} alt="slideIconLeft" />
+                            <img src={slideIconLeft} alt="slideIconLeft" onClick={goToPrevious} />
                         </button>
 
                         <button className="slider-btn">
-                            <img src={slideIconRight} alt="slideIconRight" />
+                            <img src={slideIconRight} alt="slideIconRight" onClick={goToPrevious} />
                         </button>
                     </div>
                 </div>
