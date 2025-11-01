@@ -1,26 +1,17 @@
 
-// import slideImg from "../assets/images/desktop-image-hero-1.jpg";
+import slideImg from "../assets/images/desktop-image-hero-1.jpg";
 import slideIconLeft from "../assets/images/icon-angle-left.svg";
 import slideIconRight from "../assets/images/icon-angle-right.svg";
 import arrow from "../assets/images/icon-arrow.svg";
-import ImageSlider from "./ImageSlider";
 
 const FirstSection = () => {
-
-    const slides = [
-        {url: 'desktop-image-hero-1.jpg', title: 'white'},
-        {url: 'desktop-image-hero-2.jpg', title: 'yello'},
-        {url: 'desktop-image-hero-3.jpg', title: 'black'},
-    ];
-
 
     return(
 
         <section className="hero main">
             <article className="hero-left">
                 <div className="slider-wrap">
-                    <ImageSlider slides={slides} />
-                    {/* <img src={slideImg} alt="Hero" /> */}
+                    <img src={slideImg} alt="Hero" />
                 </div>
 
                 {/* <div className="slider-controls">
@@ -46,19 +37,18 @@ const FirstSection = () => {
 
                         <a href="#shop" className="cta-shop">
                             <span>SHOP NOW</span> 
-                        <img src={arrow} alt="Room logo" className="arrow-icon" />
-                            {/* <span class="arrow"></span> */}
+                            <img src={arrow} alt="Room logo" className="arrow-icon" />
                         </a>
                 </div>
                 
                 <div className="hero-right-handling-btn">
                     <div className="slider-controls">
                         <button className="slider-btn">
-                            <img src={slideIconLeft} alt="slideIconLeft" onClick={goToPrevious} />
+                            <img src={slideIconLeft} alt="slideIconLeft" />
                         </button>
 
                         <button className="slider-btn">
-                            <img src={slideIconRight} alt="slideIconRight" onClick={goToNext} />
+                            <img src={slideIconRight} alt="slideIconRight" />
                         </button>
                     </div>
                 </div>
