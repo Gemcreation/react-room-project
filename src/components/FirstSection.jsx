@@ -1,17 +1,26 @@
 
-import slideImg from "../assets/images/desktop-image-hero-1.jpg";
+// import slideImg from "../assets/images/desktop-image-hero-1.jpg";
 import slideIconLeft from "../assets/images/icon-angle-left.svg";
 import slideIconRight from "../assets/images/icon-angle-right.svg";
 import arrow from "../assets/images/icon-arrow.svg";
+import ImageSlider from "./ImageSlider";
 
 const FirstSection = () => {
+
+    const slides = [
+        { url: "http://localhost:3001/desktop-image-hero-1.jpg", title: "beach" },
+        { url: "http://localhost:3001/desktop-image-hero-2.jpg", title: "boat" },
+        { url: "http://localhost:3001/desktop-image-hero-3.jpg", title: "forest" }
+      ];
 
     return(
 
         <section className="hero main">
             <article className="hero-left">
                 <div className="slider-wrap">
-                    <img src={slideImg} alt="Hero" />
+                    <ImageSlider slides={slides} />
+                    {/* <img src={slideImg} alt="Hero" /> */}
+                    
                 </div>
 
                 {/* <div className="slider-controls">
