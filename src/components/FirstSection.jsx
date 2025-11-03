@@ -13,7 +13,10 @@ const FirstSection = () => {
         { url: "http://localhost:3001/desktop-image-hero-3.jpg", title: "forest" },
         { url: "http://localhost:3001/desktop-image-1.jpg", title: "forest" },
         { url: "http://localhost:3001/desktop-image-1.jpg", title: "forest" },
-    //   ];
+        { url: "http://localhost:3001/desktop-image-1.jpg", title: "forest" },
+        { url: "http://localhost:3001/desktop-image-1.jpg", title: "forest" },
+        { url: "http://localhost:3001/desktop-image-1.jpg", title: "forest" },
+      ];
     //below is the new props for the images
 
     return(
