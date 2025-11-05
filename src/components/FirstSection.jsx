@@ -7,15 +7,20 @@ import ImageSlider from "./ImageSlider";
 
 const FirstSection = () => {
 
+    // const slides = [
+    //     { url: "http://localhost:3000/desktop-image-hero-1.jpg", title: "beach" },
+    //     { url: "http://localhost:3000/desktop-image-hero-2.jpg", title: "boat" },
+    //     { url: "http://localhost:3000/desktop-image-hero-3.jpg", title: "forest" },
+    //     { url: "http://localhost:3001/desktop-image-1.jpg", title: "forest" },
+    //     { url: "http://localhost:3001/desktop-image-2.jpg", title: "forest" },
+    //     { url: "http://localhost:3001/desktop-image-3.jpg", title: "forest" },
+    //     { url: "http://localhost:3001/desktop-image-4.jpg", title: "forest" },
+    //     { url: "http://localhost:3001/desktop-image-5.jpg", title: "forest" },
+    //   ];
     const slides = [
         { url: "http://localhost:3000/desktop-image-hero-1.jpg", title: "beach" },
         { url: "http://localhost:3000/desktop-image-hero-2.jpg", title: "boat" },
         { url: "http://localhost:3000/desktop-image-hero-3.jpg", title: "forest" },
-        // { url: "http://localhost:3001/desktop-image-1.jpg", title: "forest" },
-        // { url: "http://localhost:3001/desktop-image-2.jpg", title: "forest" },
-        // { url: "http://localhost:3001/desktop-image-3.jpg", title: "forest" },
-        // { url: "http://localhost:3001/desktop-image-4.jpg", title: "forest" },
-        // { url: "http://localhost:3001/desktop-image-5.jpg", title: "forest" },
       ];
     //below is the new props for the images
 

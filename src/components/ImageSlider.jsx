@@ -67,7 +67,9 @@ const ImageSlider = ({ slides }) => {
             ❱
             </div>
         </div> */}
-        <div style={slideStylesWidthBackground}></div>
+        <div style={slideStylesWidthBackground}>
+          
+        </div>
         </div>
         
         <div className="hero-right-handling-btn">
