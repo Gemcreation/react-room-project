@@ -4,6 +4,7 @@ import slideIconLeft from "../assets/images/icon-angle-left.svg";
 import slideIconRight from "../assets/images/icon-angle-right.svg";
 import arrow from "../assets/images/icon-arrow.svg";
 // import ImageSlider from "./ImageSlider";
+import { useState, useEffect } from "react";
 
 const FirstSection = () => {
 
@@ -18,19 +19,33 @@ const FirstSection = () => {
     //     { url: "http://localhost:3001/desktop-image-5.jpg", title: "forest" },
     //   ];
     const slideImg = [
-        "/images/hero1.jpg",
-        "/images/hero2.jpg",
-        "/images/hero3.jpg",
+        "/images/desktop-image-hero-1.jpg",
+        "/images/desktop-image-hero-2.jpg",
+        "/images/desktop-image-hero-3.jpg",
       ];
     //below is the new props for the images
+    const [currentIndex, setCurrentIndex] = useState(0);
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+          // move to next image (loop back to first)
+          setCurrentIndex((prevIndex) =>
+            prevIndex === slideImg.length - 1 ? 0 : prevIndex + 1
+          );
+        }, 3000); // change every 3 seconds
+    
+        // cleanup to prevent multiple intervals running
+        return () => clearInterval(interval);
+      }, [slideImg.length]);
+
+      //main work
     return(
 
         <section className="hero main">
             <article className="hero-left">
                 <div className="slider-wrap">
                     {/* <ImageSlider slides={slides} /> */}
-                    <img src={slideImg} alt="Hero" />
+                    <img src={slideImg[currentIndex]} alt="Hero" />
                     
                 </div>
 
