@@ -3,7 +3,7 @@
 import slideIconLeft from "../assets/images/icon-angle-left.svg";
 import slideIconRight from "../assets/images/icon-angle-right.svg";
 import arrow from "../assets/images/icon-arrow.svg";
-import ImageSlider from "./ImageSlider";
+// import ImageSlider from "./ImageSlider";
 
 const FirstSection = () => {
 
@@ -17,10 +17,10 @@ const FirstSection = () => {
     //     { url: "http://localhost:3001/desktop-image-4.jpg", title: "forest" },
     //     { url: "http://localhost:3001/desktop-image-5.jpg", title: "forest" },
     //   ];
-    const slides = [
-        { url: "http://localhost:3000/desktop-image-hero-1.jpg", title: "beach" },
-        { url: "http://localhost:3000/desktop-image-hero-2.jpg", title: "boat" },
-        { url: "http://localhost:3000/desktop-image-hero-3.jpg", title: "forest" },
+    const slideImg = [
+        "/images/hero1.jpg",
+        "/images/hero2.jpg",
+        "/images/hero3.jpg",
       ];
     //below is the new props for the images
 
@@ -29,8 +29,8 @@ const FirstSection = () => {
         <section className="hero main">
             <article className="hero-left">
                 <div className="slider-wrap">
-                    <ImageSlider slides={slides} />
-                    {/* <img src={slideImg} alt="Hero" /> */}
+                    {/* <ImageSlider slides={slides} /> */}
+                    <img src={slideImg} alt="Hero" />
                     
                 </div>
 
