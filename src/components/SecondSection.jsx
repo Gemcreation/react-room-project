@@ -21,7 +21,7 @@ const SecondSection = () => {
                 </p>
             </div>
 
-            <div>
+            <div className="about-image">
                 <img src={SecondSectionImg2} alt="About furniture light" />
             </div>
       </section>
