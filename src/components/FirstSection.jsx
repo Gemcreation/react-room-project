@@ -12,11 +12,6 @@ const FirstSection = () => {
     //     { url: "http://localhost:3000/desktop-image-hero-1.jpg", title: "beach" },
     //     { url: "http://localhost:3000/desktop-image-hero-2.jpg", title: "boat" },
     //     { url: "http://localhost:3000/desktop-image-hero-3.jpg", title: "forest" },
-    //     { url: "http://localhost:3001/desktop-image-1.jpg", title: "forest" },
-    //     { url: "http://localhost:3001/desktop-image-2.jpg", title: "forest" },
-    //     { url: "http://localhost:3001/desktop-image-3.jpg", title: "forest" },
-    //     { url: "http://localhost:3001/desktop-image-4.jpg", title: "forest" },
-    //     { url: "http://localhost:3001/desktop-image-5.jpg", title: "forest" },
     //   ];
     const slideImg = [
         "/images/desktop-image-hero-1.jpg",
@@ -37,6 +32,18 @@ const FirstSection = () => {
         // cleanup to prevent multiple intervals running
         return () => clearInterval(interval);
       }, [slideImg.length]);
+
+    //   const goToPrevious = () => {
+    //     setCurrentIndex((prevIndex) =>
+    //       prevIndex === 0 ? slideImg.length - 1 : prevIndex - 1
+    //     );
+    //   };
+    
+    //   const goToNext = () => {
+    //     setCurrentIndex((prevIndex) =>
+    //       prevIndex === slideImg.length - 1 ? 0 : prevIndex + 1
+    //     );
+    //   };
 
       //main work
     return(
@@ -78,11 +85,11 @@ const FirstSection = () => {
                 
                 <div className="hero-right-handling-btn">
                     <div className="slider-controls">
-                        <button className="slider-btn">
+                        <button className="slider-btn" onClick={goToPrevious}>
                             <img src={slideIconLeft} alt="slideIconLeft" />
                         </button>
 
-                        <button className="slider-btn">
+                        <button className="slider-btn" onClick={goToNext}>
                             <img src={slideIconRight} alt="slideIconRight" />
                         </button>
                     </div>
