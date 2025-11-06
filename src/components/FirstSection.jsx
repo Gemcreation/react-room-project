@@ -33,17 +33,17 @@ const FirstSection = () => {
         return () => clearInterval(interval);
       }, [slideImg.length]);
 
-    //   const goToPrevious = () => {
-    //     setCurrentIndex((prevIndex) =>
-    //       prevIndex === 0 ? slideImg.length - 1 : prevIndex - 1
-    //     );
-    //   };
+      const goToPrevious = () => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === 0 ? slideImg.length - 1 : prevIndex - 1
+        );
+      };
     
-    //   const goToNext = () => {
-    //     setCurrentIndex((prevIndex) =>
-    //       prevIndex === slideImg.length - 1 ? 0 : prevIndex + 1
-    //     );
-    //   };
+      const goToNext = () => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === slideImg.length - 1 ? 0 : prevIndex + 1
+        );
+      };
 
       //main work
     return(
