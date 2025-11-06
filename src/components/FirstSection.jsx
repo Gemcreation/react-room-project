@@ -24,7 +24,7 @@ const FirstSection = () => {
       //tryign to automate the image slider with useEffect
     useEffect(() => {
         const interval = setInterval(() => {
-          // move to next image (loop back to first)
+          //usin this to move to next image (loop back to first)
           setCurrentIndex((prevIndex) =>
             prevIndex === slideImg.length - 1 ? 0 : prevIndex + 1
           );
@@ -33,7 +33,8 @@ const FirstSection = () => {
         //I'm using this to cleanup to prevent multiple intervals running
         return () => clearInterval(interval);
       }, [slideImg.length]);
-
+      
+      //here is the arrow manul image sldier
       const goToPrevious = () => {
         setCurrentIndex((prevIndex) =>
           prevIndex === 0 ? slideImg.length - 1 : prevIndex - 1
