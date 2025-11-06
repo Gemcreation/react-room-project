@@ -18,18 +18,19 @@ const FirstSection = () => {
         "/images/desktop-image-hero-2.jpg",
         "/images/desktop-image-hero-3.jpg",
       ];
-    //below is the new props for the images
+    //above is the images from the public folder
     const [currentIndex, setCurrentIndex] = useState(0);
 
+      //tryign to automate the image slider with useEffect
     useEffect(() => {
         const interval = setInterval(() => {
           // move to next image (loop back to first)
           setCurrentIndex((prevIndex) =>
             prevIndex === slideImg.length - 1 ? 0 : prevIndex + 1
           );
-        }, 3000); // change every 3 seconds
+        }, 3000); // yeah, this change every 3 seconds
     
-        // cleanup to prevent multiple intervals running
+        //I'm using this to cleanup to prevent multiple intervals running
         return () => clearInterval(interval);
       }, [slideImg.length]);
 
@@ -52,6 +53,7 @@ const FirstSection = () => {
             <article className="hero-left">
                 <div className="slider-wrap">
                     {/* <ImageSlider slides={slides} /> */}
+                    {/* i was thinking to use a props but i'm able to do the slider with jsut state and make use of effect for the automatic timing */}
                     <img src={slideImg[currentIndex]} alt="Hero" />
                     
                 </div>
