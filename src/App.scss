@@ -197,3 +197,33 @@ section.about{
         }
     }
 }
+
+@media (max-width: 900px) {
+    .hero { 
+      grid-template-columns: 1fr; 
+    }
+    .hero-left .slide-wrap img { 
+      height: 56vh; 
+    }
+    .hero-right { 
+      padding: 28px 20px; 
+    }
+    .about { 
+      grid-template-columns: 1fr; padding: 28px 20px; 
+    }
+    .about-image img { 
+      height: 260px; 
+    }
+    .slider-controls { 
+      left: 12px; 
+      bottom: 16px; 
+      transform: translateY(0); 
+    }
+    .slider-btn { 
+      width: 46px; 
+      height: 46px; 
+    }
+    :root { 
+      --hero-font-size: 28px; 
+    }
+  }
