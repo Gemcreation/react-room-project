@@ -198,32 +198,111 @@ section.about{
     }
 }
 
-@media (max-width: 900px) {
-    .hero { 
-      grid-template-columns: 1fr; 
+@media (max-width: 992px) {
+    .hero {
+      flex-direction: column;
+  
+      .hero-right {
+        padding: 3rem 2rem;
+  
+        .hero-title {
+          font-size: 2rem;
+        }
+      }
+  
+      .hero-left {
+        height: 400px;
+      }
     }
-    .hero-left .slide-wrap img { 
-      height: 56vh; 
+  
+    .about {
+      flex-direction: column;
+  
+      .text-content {
+        padding: 2rem;
+        text-align: center;
+      }
     }
-    .hero-right { 
-      padding: 28px 20px; 
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .header {
+      padding: 1.5rem;
+      justify-content: space-between;
+      background-color: rgba(0, 0, 0, 0.5);
+  
+      nav ul {
+        display: none; /* Hide nav on mobile */
+      }
+  
+      .menu-icon {
+        display: block;
+      }
     }
-    .about { 
-      grid-template-columns: 1fr; padding: 28px 20px; 
+  
+    .hero {
+      flex-direction: column;
+  
+      .hero-left {
+        height: 300px;
+      }
+  
+      .hero-right {
+        padding: 2rem;
+  
+        .hero-title {
+          font-size: 1.7rem;
+        }
+  
+        .cta-shop {
+          font-size: 0.8rem;
+        }
+  
+        .hero-right-handling-btn {
+          display: flex;
+          justify-content: flex-start;
+          margin-top: 1rem;
+  
+          .slider-controls button {
+            padding: 0.8rem 1rem;
+          }
+        }
+      }
     }
-    .about-image img { 
-      height: 260px; 
+  
+    .about {
+      flex-direction: column;
+  
+      .text-content {
+        padding: 2rem;
+      }
     }
-    .slider-controls { 
-      left: 12px; 
-      bottom: 16px; 
-      transform: translateY(0); 
-    }
-    .slider-btn { 
-      width: 46px; 
-      height: 46px; 
-    }
-    // :root { 
-    //   --hero-font-size: 28px; 
-    // }
-  }
+}
+
+// @media screen and (max-width: 900px) {
+//     .hero article.hero-left {
+//         grid-template-rows: 1fr; 
+//     }
+//     .hero-left .slide-wrap img { 
+//       height: 56vh; 
+//     }
+//     .hero-right { 
+//       padding: 28px 20px; 
+//     }
+//     .about { 
+//         grid-template-columns: 1fr; padding: 28px 20px; 
+//     }
+//     .about-image img { 
+//       height: 260px; 
+//     }
+//     .slider-controls { 
+//       left: 12px; 
+//       bottom: 16px; 
+//       transform: translateY(0); 
+//     }
+//     .slider-btn { 
+//       width: 46px; 
+//       height: 46px; 
+//     }
+// }
