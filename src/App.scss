@@ -209,6 +209,14 @@ section.about{
     // gap: 0px;
     // margin-bottom: -5px;
   }
+  
+  section.hero article{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    // align-items: stretch;
+    // gap: 0px;
+    // margin-bottom: -5px;
+  }
 
   
   section.about{
