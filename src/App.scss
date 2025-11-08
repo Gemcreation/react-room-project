@@ -197,3 +197,30 @@ section.about{
         }
     }
 }
+
+// @media (max-width: 768px) {
+//   .header {
+//     display: none; /* hide for small screens */
+//   }
+//   section{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     align-items: stretch;
+//     gap: 0px;
+//   }
+//   section.hero{
+//     display: grid;
+//     grid-template-rows: 1fr 1fr;
+//     // align-items: stretch;
+//     // gap: 0px;
+//     // margin-bottom: -5px;
+//   }
+  
+//   section.hero article{
+//     display: grid;
+//     grid-template-rows: 1fr 1fr;
+//     // align-items: stretch;
+//     // gap: 0px;
+//     // margin-bottom: -5px;
+//   }
+// }
