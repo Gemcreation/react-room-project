@@ -46,6 +46,7 @@ const FirstSection = () => {
           prevIndex === slideImg.length - 1 ? 0 : prevIndex + 1
         );
       };
+      
 
       //main work
     return(
