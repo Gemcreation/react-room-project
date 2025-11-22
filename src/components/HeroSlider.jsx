@@ -69,7 +69,7 @@ const HeroSlider = ()=> {
                 </button>
             </div>
       </section>
-    )
+    );
 }
 
 export default HeroSlider;
