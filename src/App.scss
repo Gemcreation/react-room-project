@@ -4,9 +4,14 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
-
-.header{
+.main{
     width: 90%;
+    margin: auto;
+}
+
+//header styling
+.header{
+    width: 82%;
     margin: auto;
     position: absolute;
     top: 50px;

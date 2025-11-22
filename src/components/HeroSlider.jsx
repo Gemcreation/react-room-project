@@ -44,7 +44,7 @@ const HeroSlider = ()=> {
 
     return(
         
-        <section className="hero-slider" onTouchStart={handleTouchStart} onTouchEnd=  {handleTouchEnd}>
+        <section className="hero-slider main" onTouchStart={handleTouchStart} onTouchEnd=  {handleTouchEnd}>
             {/* SLIDE IMAGE */}
             <div className="slider-image">
             <img src={slides[current].image} alt="slide visual" />
@@ -52,10 +52,10 @@ const HeroSlider = ()=> {
                 {/* ARROWS */}
                 <div className="slider-buttons">
                     <button className="arrow-btn" onClick={goPrev}>
-                    <img src={arrowLeft} />
+                        <img src={arrowLeft} />
                     </button>
                     <button className="arrow-btn" onClick={goNext}>
-                    <img src={arrowRight} />
+                        <img src={arrowRight} />
                     </button>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import lightImg from '../assets/images/image-about-light.jpg';
 
 const AboutSection = ()=> {
     return(
-        <section className="about-area">
+        <section className="about-area main">
             <img src={darkImg} className="about-img" />
     
             <div className="about-text">
