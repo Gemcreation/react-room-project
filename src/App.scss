@@ -6,15 +6,19 @@
 }
 
 .header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+    width: 90%;
+    margin: auto;
     position: absolute;
-    width: 100%;
-    z-index: 10;
-    color: blueviolet;
-    background-color: aqua;
+    top: 50px;
+    left: 0;
+    right: 0;
+    // padding: 28px 0px 0px 0px;
+    display: flex;
+    align-items: first baseline;
+    align-content: center;
+    // justify-content: space-between;
+    gap: 4%;
+    z-index: 50;
 }
 .site-logo {
     // font-size: 25px;
@@ -165,7 +169,7 @@
     }
   
     p {
-      color: $very-dark-gray;
+      color: #747373;
       line-height: 1.5;
     }
 }

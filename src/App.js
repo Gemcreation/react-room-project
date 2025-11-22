@@ -1,16 +1,14 @@
 
 import './App.scss';
 import Header from './components/Header';
-import HeroSlider from './components/HeroSlider.jsx';
-import AboutSection from './components/AboutSection.jsx';
+import Main from './components/Main';
 
 function App() {
 
   return (
     <>
       <Header/>
-      <HeroSlider/>
-      <AboutSection/>
+      <Main/>
     </>
   );
 }
