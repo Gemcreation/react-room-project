@@ -1,6 +1,6 @@
 
 import arrowLeft from '../assets/images/icon-angle-left.svg';
-import arrowRight from '../assets/images/icon-angle-left.svg';
+import arrowRight from '../assets/images/icon-angle-right.svg';
 import arrowShop from '../assets/images/icon-arrow.svg';
 import { useState, useRef } from "react";
 
