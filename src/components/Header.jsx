@@ -31,13 +31,13 @@ const Header = ()=> {
             {/* MOBILE NAV OVERLAY */}
             {menuOpen && (
                 <div className="mobile-nav-overlay">
-                <div className="mobile-nav">
-                    <img src={closeMenu} className="close-icon" onClick={() => setMenuOpen(false)} alt="close menu"/>
-                    <a href="#">Home</a>
-                    <a href="#">Shop</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                </div>
+                    <div className="mobile-nav">
+                        <img src={closeMenu} className="close-icon" onClick={() => setMenuOpen(false)} alt="close menu"/>
+                        <a href="#">Home</a>
+                        <a href="#">Shop</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </div>
                 </div>
             )}
         </header>

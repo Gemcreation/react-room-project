@@ -5,6 +5,7 @@ import lightImg from '../assets/images/image-about-light.jpg';
 const AboutSection = ()=> {
     return(
         <section className="about-area main">
+        {/* second SECTION at the below, carry two img and a text inbtw */}
             <img src={darkImg} className="about-img" />
     
             <div className="about-text">

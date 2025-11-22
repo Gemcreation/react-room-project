@@ -45,28 +45,28 @@ const HeroSlider = ()=> {
     return(
         
         <section className="hero-slider main" onTouchStart={handleTouchStart} onTouchEnd=  {handleTouchEnd}>
-            {/* SLIDE IMAGE */}
+            {/* div for left SLIDE IMAGE */}
             <div className="slider-image">
-            <img src={slides[current].image} alt="slide visual" />
+              <img src={slides[current].image} alt="slider visual content" />
     
-                {/* ARROWS */}
-                <div className="slider-buttons">
-                    <button className="arrow-btn" onClick={goPrev}>
-                        <img src={arrowLeft} />
-                    </button>
-                    <button className="arrow-btn" onClick={goNext}>
-                        <img src={arrowRight} />
-                    </button>
-                </div>
+              {/* right side ARROWS */}
+              <div className="slider-buttons">
+                  <button className="arrow-btn" onClick={goPrev}>
+                      <img src={arrowLeft} />
+                  </button>
+                  <button className="arrow-btn" onClick={goNext}>
+                      <img src={arrowRight} />
+                  </button>
+              </div>
             </div>
   
-            {/* TEXT CONTENT */}
+            {/* embedded TEXT CONTENT in the right side */}
             <div className="slider-text">
-                <h1>{slides[current].title}</h1>
-                <p>{slides[current].text}</p>
-                <button className="shop-btn">
-                    Shop Now <img src={arrowShop} />
-                </button>
+              <h1>{slides[current].title}</h1>
+              <p>{slides[current].text}</p>
+              <button className="shop-btn">
+                  Shop Now <img src={arrowShop} />
+              </button>
             </div>
       </section>
     );
