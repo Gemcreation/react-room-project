@@ -273,14 +273,20 @@ a.cta{
   
   .about-text {
     padding: 30px;
+    margin: 10px;
   
     h3 {
-      letter-spacing: 3px;
-      margin-bottom: 15px;
+      font-size: 14px;
+      letter-spacing: 4px;
+      word-spacing: 2px;
+      margin-bottom: 12px;
+      margin-top: 20px;
     }
   
     p {
       color: hsl(0, 0%, 63%);
-      line-height: 1.5;
+      // line-height: 1.5;
+      line-height: 1.8;
+      font-size: 11px;
     }
 }
