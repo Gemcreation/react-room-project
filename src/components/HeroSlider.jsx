@@ -68,9 +68,10 @@ const HeroSlider = ()=> {
                 <div className='heroText'>
                   <h1>{slides[current].title}</h1>
                   <p>{slides[current].text}</p>
-                  <button className="shop-btn">
-                    Shop Now <img src={arrowShop} />
-                  </button>
+                  <a href="#" className="cta">
+                    <span>Shop Now</span>
+                    <img src={arrowShop} alt="shopping arrow"/>
+                  </a>
                 </div>
               </div>
             </div>
