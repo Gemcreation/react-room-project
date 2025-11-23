@@ -106,7 +106,7 @@
     display: grid;
     grid-template-columns: 1fr;
   
-    @media (min-width: 900px) {
+    @media (min-width: 1000px) {
       grid-template-columns: 1.5fr 1fr;
     }// inputing it responsiveness straight
 }
@@ -114,11 +114,11 @@
 .hero-slider{
   position: relative;
   overflow: hidden;
-  // width: 90%;
+  width: 90%;
 
   div.slider-image{
     width: 100%;
-    height: 67vh;
+    // height: 67vh;
     object-fit: cover;
     display: block;
   }//may not needed
@@ -188,6 +188,7 @@
 }
 .rightPadding{
   padding: 0px 50px;
+  // padding: 0px 50px 20px 75px;
 
   .heroText{
     h1 {
@@ -203,6 +204,7 @@
       font-size: 13px;
       line-height: 1.5;
     }
+
   }
 
 }
@@ -236,6 +238,8 @@ a.cta{
       filter: brightness(0.63);
     }
 }
+
+
 //changing the btn to anchor <a> becaue ot link to anther page
 // .shop-btn {
 //   margin-top: 20px;
@@ -261,7 +265,7 @@ a.cta{
     display: grid;
     grid-template-columns: 1fr;
   
-    @media (min-width: 800px) {
+    @media (min-width: 1000px) {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
@@ -290,3 +294,10 @@ a.cta{
       font-size: 11px;
     }
 }
+
+@media (min-width: 1000px) {
+  slider-text{
+    margin-top: 200px;
+  }
+}
+// inputing it responsiveness straight
