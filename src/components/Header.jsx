@@ -15,7 +15,7 @@ const Header = ()=> {
             </div>
             {/* Logo */}
             <div className="site-logo">
-                <a href='/'>
+                <a href='#'>
                     <img src={logo} alt="logo" id="menuIcon"/>
                 </a>
             </div>
@@ -30,13 +30,15 @@ const Header = ()=> {
             
             {/* MOBILE NAV OVERLAY */}
             {menuOpen && (
-                <div className="mobile-nav-overlay">
+                <div className="mobile-nav-overlay gem-to-open">
                     <div className="mobile-nav">
                         <img src={closeMenu} className="close-icon" onClick={() => setMenuOpen(false)} alt="close menu"/>
-                        <a href="#">Home</a>
-                        <a href="#">Shop</a>
-                        <a href="#">About</a>
-                        <a href="#">Contact</a>
+                        <div>
+                            <a href="#">Home</a>
+                            <a href="#">Shop</a>
+                            <a href="#">About</a>
+                            <a href="#">Contact</a>
+                        </div>
                     </div>
                 </div>
             )}

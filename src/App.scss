@@ -25,7 +25,8 @@
     gap: 4%;
     z-index: 50;
 }
-.site-logo {
+.site-logo img{
+  width: 95%;
     // font-size: 25px;
     // font-weight: 1000;
 }
@@ -35,7 +36,8 @@
     gap: 20px;
     
   a {
-    color: #fff;
+    color: hsl(0, 100%, 100%);
+    font-size: 13px;
     text-decoration: none;
   }
 }
@@ -43,7 +45,8 @@
 .menu-icon img {
     width: 25px;
     cursor: pointer;
-  }
+    transition: transform 0.8s ease-in-out;
+}
   
   /* MOBILE MENU */
 .mobile-nav-overlay {
@@ -58,29 +61,37 @@
 }
   
 .mobile-nav {
-    width: 70%;
-    height: 100%;
-    background: #fff;
+    width: 100%;
+    height: 12%;
+    background: hsl(0, 100%, 100%);
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 25px;
+    //to justify and align the overlay navs as its on the original project
+    justify-content: center;
+    justify-content: space-between;
   
     a {
-      color: #000;
+      color: hsl(0, 0%, 0%);
       font-weight: 700;
+      font-size: 13px;
       text-decoration: none;
+      margin-right: 30px;
     }
 }
 
 .close-icon {
     width: 20px;
-    align-self: flex-end;
+    align-self: flex-start;
+    // align-self: flex-end;
     cursor: pointer;
+    margin-left: 30px;
+    transition: transform 0.8s ease-in-out;
 }
   
-  /* DESKTOP */
-@media (min-width: 800px) {
+  /* DESKTOP responsiveness to view how it works well */
+@media (min-width: 900px) {
     .menu-icon {
       display: none;
     }
@@ -88,19 +99,24 @@
     .desktop-nav {
       display: flex;
     }
-}
+} /* DESKTOP responsiveness ends here, I don't do ti at ago for flexibilty */
 
-//for hero slider
+//for hero slider at the right side
 .hero-slider {
     display: grid;
     grid-template-columns: 1fr;
   
-    @media (min-width: 800px) {
+    @media (min-width: 900px) {
       grid-template-columns: 1.5fr 1fr;
-    }
+    }// inputing it responsiveness straight
 }
 
-.slider-image img {
+.hero-slider{
+  position: relative;
+  overflow: hidden;
+
+  //right side styling
+  .slider-image img {
     width: 100%;
     display: block;
   }
@@ -109,46 +125,89 @@
     position: absolute;
     top: 50%;
     right: 0;
-    transform: translateY(-50%);
+    // transform: translateY(-50%);
+    left: 70%;
+    bottom: -87.5%;
     display: flex;
+    gap: 0;
+    z-index: 50;
+    background-color: aqua;
+
+    div .arrow-btn {
+      background: hsl(0, 0%, 0%);
+      border: none;
+      // padding: 15px;
+      width: 60px;
+      height: 54px;
+      border: none;
+      background: #000;
+      color: hsl(0, 100%, 100%);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      
+      img {
+        width: 14px;
+      }
+  
+      &:hover{
+        background-color: hsl(0, 0%, 27%);
+        transition: 0.3s ease-in;
+      }
+    }
   }
   
-  .arrow-btn {
-    background: #000;
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-  
-    img {
-      width: 10px;
-    }
 }
 
 .slider-text {
-    padding: 40px 30px;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(250, 121, 190);
+
+}
+.rightPadding{
+  padding: 0px 80px;
+
+  .heroText{
     h1 {
-      font-size: 30px;
-      margin-bottom: 20px;
+      font-size: 40px;
+      // font-weight: 700;
+      margin-bottom: 18px;
+      // margin-bottom: 20px;
+      letter-spacing: -1px;
     }
-  
     p {
-      color: #747373;
+      color: hsl(0, 0%, 63%);
+      margin-bottom: 20px;
+      font-size: 13px;
       line-height: 1.5;
     }
   }
-  
-  .shop-btn {
-    margin-top: 20px;
-    background: none;
-    border: none;
-    font-size: 18px;
-    font-weight: 700;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+
 }
+
+.shop-btn {
+  margin-top: 20px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &:hover{
+    // background-color: hsl(0, 0%, 27%);
+    color: hsl(0, 0%, 63%);
+    transition: 0.3s ease-in;
+  }
+}
+
 
 //about section
 .about-area {
@@ -174,7 +233,7 @@
     }
   
     p {
-      color: #747373;
+      color: hsl(0, 0%, 63%);
       line-height: 1.5;
     }
 }

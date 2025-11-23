@@ -36,10 +36,10 @@ const HeroSlider = ()=> {
     // TOUCH HANDLING (VERY SIMPLE)
     const handleTouchStart = (e) => (startX.current = e.touches[0].clientX);
     const handleTouchEnd = (e) => {
-        const endX = e.changedTouches[0].clientX;
+      const endX = e.changedTouches[0].clientX;
 
-        if (startX.current - endX > 50) goNext();   // swipe left
-        if (endX - startX.current > 50) goPrev();   // swipe right
+      if (startX.current - endX > 50) goNext();   // swipe left
+      if (endX - startX.current > 50) goPrev();   // swipe right
     };
 
     return(
@@ -51,22 +51,28 @@ const HeroSlider = ()=> {
     
               {/* right side ARROWS */}
               <div className="slider-buttons">
+                <div>
                   <button className="arrow-btn" onClick={goPrev}>
-                      <img src={arrowLeft} />
+                    <img src={arrowLeft} alt="slider arrowLeft"/>
                   </button>
                   <button className="arrow-btn" onClick={goNext}>
-                      <img src={arrowRight} />
+                    <img src={arrowRight} alt="slider arrowRight"/>
                   </button>
+                </div>
               </div>
             </div>
   
             {/* embedded TEXT CONTENT in the right side */}
             <div className="slider-text">
-              <h1>{slides[current].title}</h1>
-              <p>{slides[current].text}</p>
-              <button className="shop-btn">
-                  Shop Now <img src={arrowShop} />
-              </button>
+              <div className='rightPadding'>
+                <div className='heroText'>
+                  <h1>{slides[current].title}</h1>
+                  <p>{slides[current].text}</p>
+                  <button className="shop-btn">
+                    Shop Now <img src={arrowShop} />
+                  </button>
+                </div>
+              </div>
             </div>
       </section>
     );
